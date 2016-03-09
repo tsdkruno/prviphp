@@ -8,6 +8,15 @@
 <body>
 <h1>Prvi PHP</h1>
 
+<form>
+    Prvi broj:<br>
+    <input type="text" name="broj1"><br>
+    Drugi broj:<br>
+    <input type="text" name="broj2"><br>
+    <br>
+    <input type="submit" value="Izračunaj">
+</form>
+
 <?php
     echo('Ovo je prije odlomka<br>');
     echo('<br>');
@@ -15,10 +24,8 @@
 
     echo(date('d.m.Y.'));
 
-    $ocjena = 5;
-    echo('<br>Vaša ocjena je: ' . $ocjena);
-    $nova_var = 166.8;
-    echo('<br>' . $nova_var);
+    $rezultat = $_GET['broj1'] + $_GET['broj2'];
+    echo('<br>' . $rezultat);
 ?>
 
 <p>
